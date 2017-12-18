@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+:root {
+    --main-bg-color: blue;
+  }
+/* COMP 30E */
+/* COMP 28E */
+.text {
+    height: 200px;
+    width: 200px;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-size: 14px;
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+}
+
+/* #delay {
+    font-size: 14px;
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+  } */
+  
+  .text:hover {
+    font-size: 50px;
+  }
+/* COMP 30C */
+/* COMP 30D */
+/* COMP 31D */
+.grid_box {
+    height: 200px;
+    width: 200px;
+    margin-top: 40px;
+    border: 1px solid black;
+    box-shadow:  60px -16px teal;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    background: #6db3f2; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #6db3f2 0%, #54a3ee 50%, #3690f0 51%, #1e69de 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* div {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    background: #f00;
+
+} */
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/* COMMP 31C */
+.box1 {
+    height: 50px;
+    width: 50px;
+    background-color: var(--main-bg-color);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.box2 {
+    height: 50px;
+    width: 50px;
+    background-color: var(--main-bg-color);
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.box3 {
+    height: 50px;
+    width: 50px;
+    background-color: var(--main-bg-color);
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;    
+}
+
+.box4 {
+    height: 50px;
+    width: 50px;
+    background-color: var(--main-bg-color);
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    
+}
+
